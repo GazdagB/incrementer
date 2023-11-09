@@ -10,6 +10,8 @@ function App() {
   return (
     <div className="App">
       <Incrementer count={count} setCount={setCount} />
+
+      {count === 1 && }
     
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Incrementer.css";
 
 const Incrementer = ({ count, setCount }) => {
   const handleIncrement = () => {
@@ -10,11 +11,17 @@ const Incrementer = ({ count, setCount }) => {
   };
 
   return (
-    <div>
+    <div className="Incrementer">
       <h1>Incrementer</h1>
-      <button onClick={handleDecrement}>-</button>
-      <span>{count}</span>
-      <button onClick={handleIncrement}>+</button>
+      <div className="d-flex align-items-center button-container">
+        <button className="btn btn-primary btn-lg" onClick={handleDecrement}>
+          -
+        </button>
+        <span className="py-5 count display-6">{count}</span>
+        <button className="btn btn-primary btn-lg" onClick={handleIncrement}>
+          +
+        </button>
+      </div>
     </div>
   );
 };
