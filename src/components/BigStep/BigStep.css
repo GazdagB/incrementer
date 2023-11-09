@@ -19,6 +19,7 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 0;
 }
 
 .frame::before {
