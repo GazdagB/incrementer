@@ -1,5 +1,6 @@
 import './App.css';
 import Incrementer from './components/Incrementer/Incrementer';
+import BigStep from './components/BigStep/BigStep';
 import React from 'react';
 import { useState } from 'react';
 
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       <Incrementer count={count} setCount={setCount} />
 
-      {count === 1 && }
+      {count === 1 && <BigStep />}
     
     </div>
   );
