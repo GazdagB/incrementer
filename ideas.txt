@@ -1,0 +1,29 @@
+[SUGGEST IDEA FUNCTIONAlITY]
+If you reach an unprogrammed number it should still say the message and have a button to suggest ideas for that specific number. 
+
+It should open a MODAL with a form and the number. 
+You should be able to change the number to something else so you dont have to click until eternity to reach the number 
+if you have an idea for example for 2024. 
+
+-If you change the number an error message should appear. Saying: 
+"You changed the original number ({count})! Are you sure you want to write a suggestion for this number?" - OR SOMETHING LIKE THIS 
+
+i also have to declare a state and use a useEffect hook 
+
+const [isDisabled,setIsDisabled] = useState(true)
+
+So i need two variables 
+let start = 0; 
+let end = 2
+
+function isReached(
+    if(start >= count || end >= count){
+        setIsDisabled(true)
+    }else{
+        setIsDisabled(false)
+    }
+){}
+
+useEffect(){()=>{
+    isReached()
+},count}
