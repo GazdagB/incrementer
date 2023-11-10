@@ -2,7 +2,7 @@ import React from "react";
 import "./Incrementer.css";
 
 
-const Incrementer = ({ count, setCount }) => {
+const Incrementer = ({ count, setCount,isUpDisabled,isDownDisabled }) => {
 
 
   const handleIncrement = () => {
@@ -19,11 +19,11 @@ const Incrementer = ({ count, setCount }) => {
     <div className="Incrementer">
       <h1>Incrementer</h1>
       <div className="d-flex align-items-center button-container">
-        <button className="btn btn-primary btn-lg" onClick={handleDecrement}>
+        <button disabled={isDownDisabled} className="btn btn-primary btn-lg" onClick={handleDecrement}>
           -
         </button>
         <span className="py-5 count display-6">{count}</span>
-        <button className="btn btn-primary btn-lg" onClick={handleIncrement}>
+        <button disabled={isUpDisabled} className="btn btn-primary btn-lg" onClick={handleIncrement}>
           +
         </button>
       </div>

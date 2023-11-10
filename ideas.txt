@@ -14,16 +14,19 @@ const [isDisabled,setIsDisabled] = useState(true)
 
 So i need two variables 
 let start = 0; 
-let end = 2
+let end = 2;
 
-function isReached(
-    if(start >= count || end >= count){
+function isReached(){
+     if(start >= count || end >= count){
         setIsDisabled(true)
     }else{
         setIsDisabled(false)
     }
-){}
+}
 
 useEffect(){()=>{
     isReached()
 },count}
+
+DONE!! -------------
+
