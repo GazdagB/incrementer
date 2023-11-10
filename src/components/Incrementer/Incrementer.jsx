@@ -1,7 +1,10 @@
 import React from "react";
 import "./Incrementer.css";
 
+
 const Incrementer = ({ count, setCount }) => {
+
+
   const handleIncrement = () => {
     setCount(count + 1);
   };
@@ -9,6 +12,8 @@ const Incrementer = ({ count, setCount }) => {
   const handleDecrement = () => {
     setCount(count - 1);
   };
+
+
 
   return (
     <div className="Incrementer">
